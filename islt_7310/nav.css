@@ -1,8 +1,10 @@
-nav ul li{
-display: block;
-border: 3px dotted magenta;
-width: 150px;
+nav ul li {
 list-style-type: none;
-padding: 15px 15px 15px 25px;
-margin-bottom: 5px;
+margin-bottom: 2px;
+display: block;
+border: 4px solid blue;
+padding: 15px 15px 15px 15px;
+background-color: cadetblue;
+width: 200px;
+text-align: center;
 }
