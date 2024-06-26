@@ -1,6 +1,6 @@
 .nav ul li {
 display: inline-block;
-border: 5px double red;
+border: 5px red;
 border-radius: 10px;
 width: 100px;
 list-style-type: none;
