@@ -1,9 +1,9 @@
-nav li{
+nav ul li{
 display: inline-block;
 border: 5px red;
 border-radius: 10px;
 width: 100px;
 list-style-type: none;
-padding: 30px;
+padding: 30px 30px 30px 30px;
 margin-top: 0;
 }
