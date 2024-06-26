@@ -1,0 +1,9 @@
+ul li {
+display: inline-block;
+border: 5px double red;
+border-radius: 10px;
+width: 100px;
+list-style-type: none;
+padding: 30px;
+margin-top: 0;
+}
