@@ -2,7 +2,7 @@ nav ul li {
 list-style-type: none;
 margin-bottom: 2px;
 display: block;
-border: 5px double red;
+border: 5px dotted red;
 padding: 15px 15px 15px 15px;
 background-color: yellow;
 width: 200px;
