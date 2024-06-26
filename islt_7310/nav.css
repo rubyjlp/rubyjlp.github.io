@@ -1,4 +1,4 @@
-ul li {
+.nav ul li {
 display: inline-block;
 border: 5px double red;
 border-radius: 10px;
