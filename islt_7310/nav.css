@@ -1,10 +1,19 @@
 nav ul li {
 list-style-type: none;
-margin-bottom: 2px;
-display: block;
-border: 5px dotted red;
+margin: 5px;
+display: flex;
+flex-direction: column;
+border: 10px double red;
 padding: 15px 15px 15px 15px;
 background-color: yellow;
 width: 200px;
 text-align: center;
+
+}
+
+.dropdown-content {
+    display: none;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
