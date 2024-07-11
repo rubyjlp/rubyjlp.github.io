@@ -1,29 +1,32 @@
-@font-face { 
+@font-face {
 
     font-family: courierNew;
-    
-    src: url("cour.ttf"); 
-    
+
+    src: url("cour.ttf");
+
 }
 
- @font-face { 
+@font-face {
 
     font-family: sniglet;
-        
+
     src: url("Sniglet-ExtraBold.ttf");
-        
+
 }
 
 @media (min-width:600px) {
     h1 {
-        color: yellow
-        font-family: sniglet;
+        color: yellow font-family: sniglet;
         text-transform: uppercase;
     }
 
     p {
-        text-indent: 25px
-        font-family: courierNew;
+        text-indent: 25px font-family: courierNew;
+    }
+
+    iframe {
+        aspect-ratio: 16 / 9;
+        width: 700px;
     }
 
 
@@ -56,7 +59,7 @@
         img {
             max-width: 70%;
             height: auto;
-          }
+        }
 
 
     }
@@ -78,6 +81,12 @@
     .gridfooter {
         grid-area: 6/1/span 1/span 5;
         background-image: url("images/redwall.jpg");
+
+        h2 {
+            img:hover {
+                transform: scale(1.3, 1.3);
+            }
+        }
     }
 
     /*#endregion */
@@ -103,11 +112,11 @@
     }
 
     .gridvideo {
-        grid-area: 5/1/span 1/span 3;
+        grid-area: 5/1/span 1/span 4;
     }
 
     .gridcv {
-        grid-area: 5/3/span 1/span 1;
+        grid-area: 5/4/span 1/span 1;
     }
 
     /*#endregion */
@@ -192,7 +201,7 @@
     img {
         max-width: 70%;
         height: auto;
-      }
+    }
 
     body {
         font-size: 1.5rem;
@@ -217,6 +226,11 @@
     p {
         color: blue;
         font-family: courierNew;
+    }
+
+    .gridvideo {
+        grid-area: 5/1/span 1/span 5;
+
     }
 
     blockquote {
@@ -251,26 +265,55 @@
     .grid-container {
         font-size: 1.5rem;
     }
+
+    iframe {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
 }
 
 @media print {
-   .gridnav, .gridvideo, .gridcv, .gridheadshot{
-    display: none;
-   }
-   .grid-container{
-    display: inline-grid;
-    grid-template-columns:0.5in,0.5in,1fr,0.5in,0.5in,;
 
-    h1{color:black;}
-    h2{color:black;}
-    h3{color:black;}
-    h4{color:black;}
-    p{color:black;}
-    blockquote{color:black;}
-   }
-    .gridquote{
-        grid-area:5/2/span 1/span 3;
+    .gridnav,
+    .gridvideo,
+    .gridcv,
+    .gridheadshot {
+        display: none;
     }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: 0.5in, 0.5in, 1fr, 0.5in, 0.5in, ;
+
+        h1 {
+            color: black;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        h3 {
+            color: black;
+        }
+
+        h4 {
+            color: black;
+        }
+
+        p {
+            color: black;
+        }
+
+        blockquote {
+            color: black;
+        }
+    }
+
+    .gridquote {
+        grid-area: 5/2/span 1/span 3;
+    }
+
     /* .grid-container{
         display: inline-grid;
         grid-template-columns:1fr;
@@ -287,5 +330,5 @@
             grid-area: 4/1/span 1/span 1;
         }
     } */
-    
+
 }
