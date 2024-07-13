@@ -16,12 +16,14 @@
 
 @media (min-width:600px) {
     h1 {
-        color: yellow font-family: sniglet;
+        color: yellow;
+        font-family: sniglet;
         text-transform: uppercase;
     }
 
     p {
-        text-indent: 25px font-family: courierNew;
+        text-indent: 25px;
+        font-family: courierNew;
     }
 
     iframe {
@@ -34,34 +36,31 @@
         display: inline-grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
-        /* grid:{solid red}; */
-        h3 {
-            color: red;
-            font-family: courierNew;
-        }
+    }
 
-        h4 {
-            color: blue;
-            text-align: center;
-            font-family: courierNew;
-        }
+    h3 {
+        color: red;
+        font-family: courierNew;
+    }
 
-        p {
-            color: blue;
-            font-family: courierNew;
-        }
+    h4 {
+        color: blue;
+        text-align: center;
+        font-family: courierNew;
+    }
 
-        blockquote {
-            color: blue;
-            font-family: courierNew;
-        }
+    p {
+        color: blue;
+        font-family: courierNew;
+    }
 
-        img {
-            max-width: 70%;
-            height: auto;
-        }
+    blockquote {
+        color: blue;
+        font-family: courierNew;
+    }
 
-
+    img {
+        max-width: 70%;
     }
 
     /*#region Basics */
@@ -82,11 +81,11 @@
         grid-area: 6/1/span 1/span 5;
         background-image: url("images/redwall.jpg");
 
-        h2 {
+        /* h2 {
             img:hover {
                 transform: scale(1.3, 1.3);
             }
-        }
+        } */
     }
 
     /*#endregion */
@@ -178,22 +177,31 @@
     header {
         background-color: red;
 
-        h1 {
-            color: yellow;
-            font-family: sniglet;
-            text-transform: uppercase;
-        }
+
+    }
+
+    h1 {
+        color: yellow;
+        font-family: sniglet;
+        text-transform: uppercase;
     }
 
     footer {
         background-color: red;
         background-image: url("images/redwall.jpg");
 
-        h2 {
-            color: yellow;
-            font-family: courierNew;
-        }
+
     }
+
+    h2 {
+        color: yellow;
+        font-family: courierNew;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
 }
 
 @media (max-width:600px) {
@@ -245,21 +253,25 @@
     header {
         background-color: red;
 
-        h1 {
-            color: yellow;
-            font-family: sniglet;
-            text-transform: uppercase;
-        }
+        
+    }
+
+    h1 {
+        color: yellow;
+        font-family: sniglet;
+        text-transform: uppercase;
     }
 
     footer {
         background-color: red;
         background-image: url("images/redwall.jpg");
 
-        h2 {
-            color: yellow;
-            font-family: courierNew;
-        }
+        
+    }
+
+    h2 {
+        color: yellow;
+        font-family: courierNew;
     }
 
     .grid-container {
@@ -283,52 +295,37 @@
 
     .grid-container {
         display: inline-grid;
-        grid-template-columns: 0.5in, 0.5in, 1fr, 0.5in, 0.5in, ;
+        grid-template-columns: 0.5in 0.5in 1fr 0.5in 0.5in;
 
-        h1 {
-            color: black;
-        }
+        
+    }
 
-        h2 {
-            color: black;
-        }
+    h1 {
+        color: black;
+    }
 
-        h3 {
-            color: black;
-        }
+    h2 {
+        color: black;
+    }
 
-        h4 {
-            color: black;
-        }
+    h3 {
+        color: black;
+    }
 
-        p {
-            color: black;
-        }
+    h4 {
+        color: black;
+    }
 
-        blockquote {
-            color: black;
-        }
+    p {
+        color: black;
+    }
+
+    blockquote {
+        color: black;
     }
 
     .gridquote {
         grid-area: 5/2/span 1/span 3;
     }
-
-    /* .grid-container{
-        display: inline-grid;
-        grid-template-columns:1fr;
-        .gridheader:{
-            grid-area: 1/1/span 1/span 1;
-        }
-        .gridabout:{
-            grid-area: 2/1/span 1/span 1;
-        }
-        .gridquote:{
-            grid-area: 3/1/span 1/span 1;
-        }
-        .gridfooter:{
-            grid-area: 4/1/span 1/span 1;
-        }
-    } */
 
 }
