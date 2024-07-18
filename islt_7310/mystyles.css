@@ -14,6 +14,33 @@
 
 }
 
+
+caption, td, th{
+    font-family: courierNew;
+    color:blue;
+}
+
+table, td{
+    border:5px double blue;
+}
+
+tr:nth-child(even){
+    background-color: yellow;
+}
+
+thead{
+    background-color: blue;
+}
+
+th{
+    color:white;
+}
+
+table{
+    width:100%;
+}
+
+
 @media (min-width:600px) {
     h1 {
         color: yellow;
@@ -156,8 +183,12 @@
         grid-area: 8/2/span 1/span 3;
     }
 
+    .otherwork {
+        grid-area: 9/1/span 1/span 4;
+    }
+
     .projectsfooter {
-        grid-area: 9/1/span 1/span 5;
+        grid-area: 10/1/span 1/span 5;
         background-image: url("images/redwall.jpg");
     }
 
@@ -205,6 +236,10 @@
 }
 
 @media (max-width:600px) {
+
+    table{
+        width:90%;
+    }
 
     img {
         max-width: 70%;
