@@ -12,7 +12,22 @@
 
     }
 
-    .dropdown-content {
+    nav ul li ul li{
+        list-style-type: none;
+        margin: 0px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        border: 10px double red;
+        padding: 15px;
+        background-color: yellow;
+        width: 100%;
+        text-align: center;
+        align-self:center;
+
+    }
+
+    nav ul ul {
         display: none;
     }
 
@@ -22,8 +37,16 @@
         margin-left: 100%;
         display: none;
     } */
-    .dropdown:hover .dropdown-content {
-        display: block;
+    nav ul li:hover .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-self:center;
+        padding: 0px 0px 0px 0px;
+        width:150px;
+        top: 90px;
+        right: 0;
+        /* width: 155px; */
+        height: 240px;
     }
 }
 
@@ -41,7 +64,7 @@
 
     }
 
-    .dropdown-content {
+    nav ul ul {
         display: none;
     }
 }
